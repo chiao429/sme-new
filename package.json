@@ -1,0 +1,27 @@
+{
+  "name": "sme-ai",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:backend": "node --watch backend/server.mjs",
+    "dev:frontend": "node frontend/server.mjs",
+    "build": "npm run build:client",
+    "build:client": "vite --config frontend/vite.config.js build",
+    "start:backend": "NODE_ENV=production node backend/server.mjs",
+    "start:frontend": "NODE_ENV=production node frontend/server.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "express": "^5.1.0",
+    "lucide-react": "^1.51.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.4.3"
+  }
+}
