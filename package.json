@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.mjs",
+    "dev": "npm run dev:frontend",
     "dev:backend": "node --watch backend/server.mjs",
-    "dev:frontend": "node frontend/server.mjs",
+    "dev:frontend": "vite --config frontend/vite.config.js",
     "build": "npm run build:client",
     "build:client": "vite --config frontend/vite.config.js build",
     "start:backend": "NODE_ENV=production node backend/server.mjs",
